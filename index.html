@@ -7,109 +7,112 @@
 <link rel="stylesheet" href="Resources/css/style.css">
     
 </head>
-
+ 
 <body>
     
         
     <div class="calculator">
         <img class="mobile" src="Resources/image/unnamed.png">
         <div class="col-12 float-right mt-5">
-        <h1 class="float-right mr-2">120</h1>
+       <form name="form" >
+            
+                <input class="textview float-right" name="textview" >
+            </form>
         </div>
         <div class="buttons col-12 ">
             <table>
             <tr>
                 
-            <th class="">
-                <button class="rounded-circle" type="button">AC</button>
+            <th >
+                <button class="rounded-circle" type="button" onclick="clean()">AC</button>
             </th>
                 
-            <th class="">
-                <button class="rounded-circle" type="button">+/-</button>
+            <th >
+                <button class="rounded-circle" type="button" value="<" onclick="back()">C</button>
             </th>
                 
-            <th class="">
-                <button class="rounded-circle" type="button">%</button>
+            <th >
+                <button class="rounded-circle" type="button" value="%" onclick="insert('%')">%</button>
             </th>
                 
-            <th class="">
-                <button class="rounded-circle" type="button">/</button>
+            <th >
+                <button class="rounded-circle" type="button" value="/" onclick="insert('/')">/</button>
             </th>
                 
             </tr>
             
             <tr>
                 
-            <th class="">
-            <button class="rounded-circle" type="button">7</button>
+            <th >
+            <button class="rounded-circle" type="button" value="7" onclick="insert(7)">7</button>
             </th>
                 
-            <th class="">
-            <button class="rounded-circle" type="button">8</button>
+            <th >
+            <button class="rounded-circle" type="button" value="8" onclick="insert(8)">8</button>
             </th>
                 
-            <th class="">
-            <button class="rounded-circle" type="button">9</button>
+            <th >
+            <button class="rounded-circle" type="button" value="9" onclick="insert(9)">9</button>
             </th>
                 
-            <th class="">
-            <button class="rounded-circle" type="button">x</button>
-            </th>
-                
-            </tr>
-                
-            <tr>
-                
-            <th  class="">
-            <button class="rounded-circle" type="button">4</button>
-            </th>
-                
-            <th class="">
-            <button class="rounded-circle" type="button">5</button>
-            </th>
-                
-            <th class="">
-            <button class="rounded-circle" type="button">6</button>
-            </th>
-                
-            <th class="">
-            <button class="rounded-circle" type="button">-</button>
+            <th >
+            <button class="rounded-circle" type="button" value="X" onclick="insert('*')">x</button>
             </th>
                 
             </tr>
                 
             <tr>
                 
-            <th class="">
-            <button class="rounded-circle" type="button">1</button>
+            <th >
+            <button class="rounded-circle" type="button" value="4" onclick="insert(4)">4</button>
             </th>
                 
-            <th class="">
-            <button class="rounded-circle" type="button">2</button>
+            <th >
+            <button class="rounded-circle" type="button" value="5" onclick="insert(5)">5</button>
             </th>
                 
-            <th class="">
-            <button class="rounded-circle" type="button">3</button>
+            <th >
+            <button class="rounded-circle" type="button" value="6" onclick="insert(6)">6</button>
             </th>
                 
-            <th class="">
-            <button class="rounded-circle" type="button">+</button>
+            <th >
+            <button class="rounded-circle" type="button" value="-" onclick="insert('-')">-</button>
             </th>
                 
             </tr>
                 
             <tr>
                 
-            <th colspan="2" class="">
-            <button class="text-left pl-3 button0" type="button">0</button>
+            <th >
+            <button class="rounded-circle" type="button" value="1" onclick="insert(1)">1</button>
             </th>
                 
-            <th class="">
-            <button class="rounded-circle" type="button">.</button>
+            <th >
+            <button class="rounded-circle" type="button" value="2" onclick="insert(2)">2</button>
             </th>
                 
-            <th class="">
-            <button class="rounded-circle" type="button">=</button>
+            <th >
+            <button class="rounded-circle" type="button" value="3" onclick="insert(3)">3</button>
+            </th>
+                
+            <th >
+            <button class="rounded-circle" type="button" value="+" onclick="insert('+')">+</button>
+            </th>
+                
+            </tr>
+                
+            <tr>
+                
+            <th colspan="2" >
+            <button class="text-left pl-3 button0" type="button" value="0" onclick="insert(0)">0</button>
+            </th>
+                
+            <th >
+            <button class="rounded-circle" type="button" value="." onclick="insert('.')">.</button>
+            </th>
+                
+            <th >
+            <button class="rounded-circle" type="button" value="=" onclick="equal()">=</button>
             </th>
                 
             </tr>
@@ -118,6 +121,7 @@
             
         </div>
     </div>
+    <script src="Resources/Js/control.js"></script>
 </body>
 
 </html>
