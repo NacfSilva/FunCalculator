@@ -2,7 +2,7 @@
 
  function insert(num){
       if((document.form.textview.value+num)>2147483647 || (document.form.textview.value+num)<-2147483647){
-                document.form.textview.value = "Overflow!max is 32bits"
+                document.form.textview.value = "Overflow! Max is 32bits."
                 
             }
      else{
@@ -12,7 +12,7 @@
             }
          else{
          if((eval(document.form.textview.value+num))>2147483647 || (eval(document.form.textview.value+num))<-2147483647){
-                document.form.textview.value = "Overflow!max is 32bits"
+                document.form.textview.value = "Overflow! Max is 32bits."
                }
              else{
                  document.form.textview.value = document.form.textview.value+num
@@ -33,7 +33,7 @@
                                 exp = "Impossible to calculate!"
                                 document.form.textview.value = exp
                             }
-                            
+                             
                             
                             
                         }
