@@ -53,7 +53,7 @@ button:hover{
 .equal:hover{
    background-color: rgba(0,245,0,1);
   animation-name: green;
-  animation-duration: 0.3s;
+  animation-duration: 0.2s;
     border: solid 1px rgb(251,251,251);
     box-shadow:inset 2px 1px 1px rgba(200,200,200,1)!important;
     font-size:19px; 
