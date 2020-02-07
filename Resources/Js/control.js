@@ -54,7 +54,7 @@
                             
                             
                         }
-            
+            document.form.textview.value = eval(exp)
                 
                   }  
             }
