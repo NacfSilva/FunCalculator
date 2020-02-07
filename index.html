@@ -7,7 +7,11 @@
 <link rel="stylesheet" href="Resources/css/style.css">
     
 </head>
- 
+     <script>
+    var bleep = new Audio();
+bleep.src="Resources/audios/bleep.mp3";
+
+    </script>
 <body>
     
         
@@ -23,19 +27,19 @@
             <tr>
                 
             <th >
-                <button class="rounded-circle" type="button" onclick="clean()">AC</button>
+                <button class="rounded-circle" type="button" onmousedown="bleep.play()" onclick="clean()">AC</button>
             </th>
                 
             <th >
-                <button class="rounded-circle" type="button" value="<" onclick="back()">C</button>
+                <button class="rounded-circle" type="button" value="<" onmousedown="bleep.play()" onclick="back()">C</button>
             </th>
                 
             <th >
-                <button class="rounded-circle" type="button" value="%" onclick="insert('%')">%</button>
+                <button class="rounded-circle " type="button" value="%" onmousedown="bleep.play()" onclick="insert('%')">%</button>
             </th>
                 
             <th >
-                <button class="rounded-circle" type="button" value="/" onclick="insert('/')">/</button>
+                <button class="rounded-circle" type="button" value="/" onmousedown="bleep.play()" onclick="insert('/')">/</button>
             </th>
                 
             </tr>
@@ -43,39 +47,19 @@
             <tr>
                 
             <th >
-            <button class="rounded-circle" type="button" value="7" onclick="insert(7)">7</button>
+            <button class="rounded-circle" type="button" value="7" onmousedown="bleep.play()" onclick="insert(7)">7</button>
             </th>
                 
             <th >
-            <button class="rounded-circle" type="button" value="8" onclick="insert(8)">8</button>
+            <button class="rounded-circle " type="button" value="8" onmousedown="bleep.play()" onclick="insert(8)">8</button>
             </th>
                 
             <th >
-            <button class="rounded-circle" type="button" value="9" onclick="insert(9)">9</button>
+            <button class="rounded-circle" type="button" value="9" onmousedown="bleep.play()" onclick="insert(9)">9</button>
             </th>
                 
             <th >
-            <button class="rounded-circle" type="button" value="X" onclick="insert('*')">x</button>
-            </th>
-                
-            </tr>
-                
-            <tr>
-                
-            <th >
-            <button class="rounded-circle" type="button" value="4" onclick="insert(4)">4</button>
-            </th>
-                
-            <th >
-            <button class="rounded-circle" type="button" value="5" onclick="insert(5)">5</button>
-            </th>
-                
-            <th >
-            <button class="rounded-circle " type="button" value="6" onclick="insert(6)">6</button>
-            </th>
-                
-            <th >
-            <button class="rounded-circle" type="button" value="-" onclick="insert('-')">-</button>
+            <button class="rounded-circle" type="button" value="X" onmousedown="bleep.play()" onclick="insert('*')">x</button>
             </th>
                 
             </tr>
@@ -83,19 +67,39 @@
             <tr>
                 
             <th >
-            <button class="rounded-circle " type="button" value="1" onclick="insert(1)">1</button>
+            <button class="rounded-circle" type="button" value="4" onmousedown="bleep.play()" onclick="insert(4)">4</button>
             </th>
                 
             <th >
-            <button class="rounded-circle" type="button" value="2" onclick="insert(2)">2</button>
+            <button class="rounded-circle" type="button" value="5" onmousedown="bleep.play()" onclick="insert(5)">5</button>
             </th>
                 
             <th >
-            <button class="rounded-circle" type="button" value="3" onclick="insert(3)">3</button>
+            <button class="rounded-circle" type="button" value="6" onmousedown="bleep.play()" onclick="insert(6)">6</button>
             </th>
                 
             <th >
-            <button class="rounded-circle" type="button" value="+" onclick="insert('+')">+</button>
+            <button class="rounded-circle" type="button" value="-" onmousedown="bleep.play()" onclick="insert('-')">-</button>
+            </th>
+                
+            </tr>
+                
+            <tr>
+                
+            <th >
+            <button class="rounded-circle" type="button" value="1" onmousedown="bleep.play()" onclick="insert(1)">1</button>
+            </th>
+                
+            <th >
+            <button class="rounded-circle" type="button" value="2" onmousedown="bleep.play()" onclick="insert(2)">2</button>
+            </th>
+                
+            <th >
+            <button class="rounded-circle" type="button" value="3" onmousedown="bleep.play()" onclick="insert(3)">3</button>
+            </th>
+                
+            <th >
+            <button class="rounded-circle" type="button" value="+" onmousedown="bleep.play()" onclick="insert('+')">+</button>
             </th>
                 
             </tr>
@@ -103,15 +107,15 @@
             <tr>
                 
             <th colspan="2" >
-            <button class="text-left pl-3 button0" type="button" value="0" onclick="insert(0)">0</button>
+            <button class="text-left pl-3 button0" type="button" value="0" onmousedown="bleep.play()" onclick="insert(0)">0</button>
             </th>
                 
             <th >
-            <button class="rounded-circle" type="button" value="." onclick="insert('.')">.</button>
+            <button class="rounded-circle" type="button" value="." onmousedown="bleep.play()" onclick="insert('.')">.</button>
             </th>
                 
             <th >
-            <button class="rounded-circle" type="button" value="=" onclick="equal()">=</button>
+            <button class="rounded-circle" type="button" value="=" onmousedown="bleep.play()" onclick="equal()">=</button>
             </th>
                 
             </tr>
@@ -121,6 +125,8 @@
         </div>
     </div>
     <script src="Resources/Js/control.js"></script>
-</body>
+
+    </body>
+
 
 </html>
